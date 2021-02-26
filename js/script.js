@@ -3,6 +3,11 @@ var chilometri = prompt("Iniziamo il viaggio, quanti chilometri vuoi percorrere?
 
 var eta = prompt("Quanti anni hai?");
 
+if (isNaN(chilometri || eta)) {
+  alert("Si prega di inserire un importo numerico, ricaricare la pagina");
+ } else if (isNaN(eta)) {
+    alert("Si prega di inserire un importo numerico, ricaricare la pagina");
+}
 //Calcolare prezzo base del biglietto
 var prezzoBiglietto = 0.21 * chilometri;
 
@@ -10,6 +15,7 @@ var prezzoBiglietto = 0.21 * chilometri;
 var scontoGiovani = (20 * prezzoBiglietto) / 100;
 
 var scontoAnziani = (40 * prezzoBiglietto) / 100;
+
 
 if (eta < 18) {
   prezzoBiglietto = prezzoBiglietto - scontoGiovani;

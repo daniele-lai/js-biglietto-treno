@@ -3,7 +3,7 @@ var chilometri = prompt("Iniziamo il viaggio, quanti chilometri vuoi percorrere?
 
 var eta = prompt("Quanti anni hai?");
 
-if (isNaN(chilometri || eta)) {
+if (isNaN(chilometri)) {
   alert("Si prega di inserire un importo numerico, ricaricare la pagina");
  } else if (isNaN(eta)) {
     alert("Si prega di inserire un importo numerico, ricaricare la pagina");
